@@ -1,5 +1,7 @@
 applications:
 - name: java-app
-  memory: 512M
+  memory: 1024M
   instances: 1
   path: target/simple-java-app-1.0-SNAPSHOT.jar
+  env:
+    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
